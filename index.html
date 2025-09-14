@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - SUHAIL I</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="icon" type="image/x-icon" href="/images/briefcase-svgrepo-com.png" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://kit.fontawesome.com/f84f445020.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+</head>
+
+<body>
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <nav class="navbar" id="nav-menu">
+    <div class="max-width">
+      <div class="logo"><a href="#">Portfolio</a></div>
+      <ul class="menu">
+        <li><a href="#home" class="menu-btn active">Home</a></li>
+        <li><a href="#about" class="menu-btn active">About</a></li>
+        <li><a href="#projects" class="menu-btn active">Projects</a></li>
+        <li><a href="#skills" class="menu-btn active">Skills</a></li>
+        <li><a href="#contact" class="menu-btn active">Contact</a></li>
+        <li id="resume-button-1">
+          <a id="resume-link-1" download="" href="./images/files/Bharath_Govindula_Resume (4).pdf" onclick="resume()" target="_blank"
+            class="nav-link active resume">Resume</a>
+        </li>
+      </ul>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- -------------------- home section start -------------------- -->
+  <section class="home nav-link" id="home">
+    <div class="max-width">
+      <div id="particles-js"></div>
+      <div class="home-content">
+        <div class="text-1">Hello, My Name Is</div>
+        <div class="text-2">SUHAIL I</div>
+        <div class="text-3">
+          And I'm a <br />
+          <span class="typing"></span>
+          <br />
+          <button class="btn-resume" id="resume-button-2">
+            <a target="_blank" id="resume-link-2" download="" href="./images/files/Bharath_Govindula_Resume (4).pdf"
+              onclick="resume()">Resume</a>
+          </button>
+        </div>
+      </div>
+      <script src="app.js"></script>
+    </div>
+  </section>
+
+  <!-- -------------------- about section start -------------------- -->
+
+  <section class="about section nav-link" id="about">
+    <div class="max-width">
+      <h2 class="title">About me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img class="home-img" src="./images/logo/Untitled design.jpeg" alt="" />
+        </div>
+        <div class="column right">
+          <div class="text">
+            <span class="aboutRaw" id="user-detail-name">I'm SUHAIL I and I'm a</span>
+            <br />
+            <span class="typing-2"></span>
+          </div>
+          <p id="user-detail-intro">
+            I have a deep enthusiasm for creating web applications that are
+            both scalable and efficient. Through my previous projects, I have
+            gained valuable experience and developed a solid understanding of
+            front-end and back-end technologies.Proficient in developing
+            website using HTML, CSS, JavaScript, React, Redux, and ChakraUI.
+            and I am always eager to broaden my skillset by learning new
+            technologies. What truly excites me is the opportunity to apply my
+            knowledge and experience towards the advancement of an
+            organization's growth.
+          </p>
+
+          <a download="Bharath-Resume.pdf" href="./images/files/Bharath_Govindula_Resume (4).pdf" onclick="resume()"
+            target="_blank">Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------- Projects section start -------------------- -->
+  <section class="nav-link projects" id="projects">
+    <div class="max-width">
+      <h2 class="title">My Projects</h2>
+      <div class="serv-content">
+        <div class="card project-card">
+          <div class="box">
+            <img class="projectImage" src="./images/logo/QuickStay.png" alt="" width="100%" height="120%" />
+            <div class="project-title">QuickStay</div>
+            <p class="project-description">
+              A modern, full-stack web application for seamless hotel booking and management. QuickStay is built for travelers, hotel owners, and admins 
+              with features like real-time room availability, secure payments, booking management, analytics, and more. 
+              Designed with robust security, scalability, and a beautiful, user-friendly interface.
+
+
+              <span class="project-type">This application will allow users to Register, Login, Search Hotels, 
+                Book Rooms, Manage Reservations, and make Secure Payments. 
+                The project will be divided into backend and frontend components, 
+                seamlessly integrated to provide a smooth hotel booking experience.
+</span>
+            </p>
+            <div class="project-tech-stack techstack">
+              <p>
+                <span class="project-tech-stack">Tech Stack :</span>
+                &nbsp;React.js | Express.js | Node.js | MongoDB | Javascript | PrebuiltUI
+              </p>
+            </div>
+            <div class="sourceCodeBtn">
+              <a href="" class="project-deployed-link"><button class="liveBtn"
+                  onclick="window.open('https://quickstay-theta-two.vercel.app/ ','_blank')">
+                  Deployed
+                </button></a>
+              <a href="" class="project-github-link"><button class="liveBtn"
+                  onclick="window.open('https://github.com/irsuhail/Hotel-Booking','_blank')">
+                  Github
+                </button></a>
+            </div>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="box">
+            <img class="projectImage" src="./images/logo/QuickCart.png" alt="" width="100%" height="120%" />
+            <div class="project-title">QuickCart</div>
+            <p class="project-description">
+              Creating a seamless shopping experience with personalized recommendations tailored to user preferences and budget. 
+              QuickCart is an e-commerce application built with React, Next.js, Inngest, and JavaScript, featuring modern design, 
+              scalability, and smooth performance.
+
+              <span class="project-type">A React application for hotel booking and management, 
+                allowing users to register, log in, search hotels, book rooms, manage reservations, 
+                and make secure payments with a smooth and user-friendly interface.</span>
+            </p>
+            <div class="project-tech-stack techstack">
+              <p>
+                <span class="project-tech-stack">Tech Stack :</span>
+                &nbsp;React.js | Next.js  | Inngest | Javascript | PrebuiltUI
+              </p>
+            </div>
+            <div class="sourceCodeBtn">
+              <a href="" class="project-deployed-link">
+             <button class="liveBtn"
+             onclick="window.open('https://quick-cart-mauve-two-89.vercel.app/', '_blank')">
+             Deployed
+             </button>
+             </a>
+
+            <a href="" class="project-github-link">
+            <button class="liveBtn"
+            onclick="window.open('https://github.com/irsuhail/Projects', '_blank')">
+            Github
+            </button>
+            </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="box">
+            <img class="projectImage" src="./images/logo/ROSA.png" alt="" width="100%" height="120%" />
+            <div class="project-title">ROSA</div>
+            <p class="project-description">
+              This application provides a modern frontend built with HTML, CSS, and JavaScript 
+              for a smooth and interactive user experience. The ROSA application focuses on a clean UI, 
+              responsive design, and seamless navigation to deliver an engaging interface.
+
+            </p>
+            <div class="project-tech-stack techstack">
+              <p>
+                <span class="project-tech-stack">Tech Stack :</span>
+                &nbsp;HTML | CSS | JavaScript  
+              </p>
+            </div>
+            <div class="sourceCodeBtn">
+              <button class="liveBtn project-deployed-link"
+                onclick="window.open('https://restaurant-three-mocha.vercel.app/','_blank')">
+                Deployed
+              </button>
+              <button class="liveBtn project-github-link"
+                onclick="window.open('https://github.com/irsuhail/Restaurant','_blank')">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+          <div class="card project-card">
+
+          <div class="box">
+            <img class="projectImage" src="./images/logo/Cake.png" alt="" width="100%" height="120%" />
+            <div class="project-title">Cake Shop</div>
+            <p class="project-description">
+              A modern web application for organizing, creating, and sharing your favorite recipes with beautiful visuals and meal planning features.
+              <span class="project-type">
+                  <span class="project-type">This project showcases how core web technologies can be used to build an engaging recipe management platform..</span>
+            </p>
+              </span>
+            </p>
+            <div class="project-tech-stack techstack">
+              <p>
+                <span class="project-tech-stack">Tech Stack :</span>
+                &nbsp;HTMl | CSS | JavaScript 
+              </p>
+            </div>
+            <div class="sourceCodeBtn">
+              <button class="liveBtn project-deployed-link"
+                onclick="window.open('https://shop-chi-lemon.vercel.app/','_blank')">
+                Deployed
+              </button>
+              <button class="liveBtn project-github-link"
+                onclick="window.open('https://github.com/irsuhail/Shop','_blank')">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+          <div class="card project-card">
+
+          <div class="box">
+            <img class="projectImage" src="./images/logo/Insect.png" alt="" width="100%" height="120%" />
+            <div class="project-title">Insect Game</div>
+            <p class="project-description">
+             Insect Game is a fun and interactive browser-based game built with HTML, CSS, and JavaScript. 
+             The game challenges players with engaging mechanics, smooth animations, and a responsive design, 
+             delivering an enjoyable and dynamic gaming experience directly in the browser.
+
+              <span class="project-type">
+                  <span class="project-type"></span>
+            </p>
+              </span>
+            </p>
+            <div class="project-tech-stack techstack">
+              <p>
+                <span class="project-tech-stack">Tech Stack :</span>
+                &nbsp;HTMl | CSS | JavaScript 
+              </p>
+            </div>
+            <div class="sourceCodeBtn">
+              <button class="liveBtn project-deployed-link"
+                onclick="window.open('https://insect-game-rosy.vercel.app/','_blank')">
+                Deployed
+              </button>
+              <button class="liveBtn project-github-link"
+                onclick="window.open('https://github.com/irsuhail/Insect-Game','_blank')">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        
+      
+
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------- skills section ---------------------- -->
+
+  <section class="skills nav-link" id="skills">
+    <div class="max-width">
+      <h2 class="title">Skills</h2>
+      <div class="tools">
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/HTML.png" alt="" />
+          <h1 class="skills-card-name">HTML5</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/css.png" alt="" />
+          <h1 class="skills-card-name">CSS3</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/JS.png" alt="" />
+          <h1 class="skills-card-name">JavaScript</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/React.png" alt="" />
+          <h1 class="skills-card-name">React</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg" alt="" />
+          <h1 class="skills-card-name">NodeJS</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/Expressjs.png" alt="" />
+          <h1 class="skills-card-name">ExpressJS</h1>
+        </div>
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/MongoDB.png" alt="" />
+          <h1 class="skills-card-name">MongoDB</h1>
+        </div>
+
+        <div class="tool skills-card">
+          <img class="skills-card-img" src="./images/logo/Tailwind CSS.png" alt="" />
+          <h1 class="skills-card-name">Tailwind</h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------Tools --------------------------->
+
+    <!-- --------------------- git calendar ----------------------- -->
+
+    <section class="github">
+        <h2 class="title">Github Stats</h2>
+
+
+        <div class="calendar react-activity-calendar">
+            Loading the data just for you.
+        </div>
+
+        <div class="git-box">
+            <div>
+                <img id="github-streak-stats"
+                    src="https://github-readme-streak-stats.herokuapp.com?user=BharathGovindula&theme=radical&hide_border=true&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+                    alt="streakstat" />
+            </div>
+            <div>
+                <img id="github-top-langs"
+                    src="https://github-readme-stats.vercel.app/api/top-langs/?username=BharathGovindula&lans-count=3&show_icons=true&theme=radical"
+                    alt="top_languages" />
+            </div>
+            <div>
+                <img id="github-stats-card"
+                    src="https://github-readme-stats.vercel.app/api?username=BharathGovindula&count_private=true&theme=radical"
+                    alt="stat-card" />
+            </div>
+        </div>
+    </section>
+
+
+  <!-- contact section start -->
+  <section class="contact nav-link" id="contact">
+    <div class="max-width">
+      <h2 class="title">Contact me</h2>
+      <div class="contact-content">
+        <div class="column left">
+          <div class="icons">
+            <div class="row">
+              <i class="fa-brands fa-github"></i>
+              <div class="info">
+                <div class="sub-title">
+                  <a id="contact-github" class="sub-title1" target="_blank"
+                    href="https://github.com/irsuhail">github.com/<b>SUHAIL I</b></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fa-brands fa-linkedin"></i>
+              <div class="info">
+                <div class="sub-title">
+                  <a id="contact-linkedin" class="sub-title1" target="_blank"
+                    href="https://www.linkedin.com/in/suhail-i-862386217">linkedin.com/in/<b>SUHAIL I</b></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <div id="contact-email" class="sub-title1" onclick="myFunction()">
+                  <b>irsuhail2000</b>@gmail.com
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <div id="contact-phone" class="sub-title1">
+                  <b>+91 7483429246</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+  <!-- ---------------------------------------------------------------------------------------- -->
+
+
+  <!-- ---------------------------------------------------------------------------------------- -->
+</body>
+
+</html>
+
+<script>
+  function myFunction() {
+    window.location.href = "mailto:irsuhail2000@gmail.com";
+  }
+  function resume() {
+    window.open(
+      "https://drive.google.com/file/d/1C3_8tWs6vEHDl4yOgvktf7S5Tk81lX7z/view?usp=sharing",
+      "_blank"
+    );
+  }
+
+
+</script>
+
+<script>
+    new GitHubCalendar(".calendar", "BharathGovindula");
+    new GitHubCalendar(".calendar", "BharathGovindula", { responsive: true });
+</script>
