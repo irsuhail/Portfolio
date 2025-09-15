@@ -206,6 +206,9 @@ section .title::after {
 
 /* home section styling */
 .home {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   display: flex;
   /* background: url("https://preview.colorlib.com/theme/hiroto/img/home-room/hr-1.jpg") no-repeat center; */
   /* background: url("./images/vNyyaL-1280.jpg") no-repeat center; */
@@ -217,7 +220,7 @@ section .title::after {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
-
+  position:relative;
 }
 
 #particles-js {
@@ -225,13 +228,16 @@ section .title::after {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
+  width:100%;
+  top:0;
+  left:0;
+  z-index: 0;
   position: absolute;
 }
 
 .home .max-width {
-  filter: blur(0px);
-  width: 100%;
-  display: flex;
+  position: relative;
+  z-index:1;
 }
 
 .home .max-width .row {
