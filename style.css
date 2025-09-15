@@ -206,9 +206,6 @@ section .title::after {
 
 /* home section styling */
 .home {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   display: flex;
   /* background: url("https://preview.colorlib.com/theme/hiroto/img/home-room/hr-1.jpg") no-repeat center; */
   /* background: url("./images/vNyyaL-1280.jpg") no-repeat center; */
@@ -220,7 +217,7 @@ section .title::after {
   background-size: cover;
   background-attachment: fixed;
   font-family: "Ubuntu", sans-serif;
-  position:relative;
+
 }
 
 #particles-js {
@@ -228,16 +225,13 @@ section .title::after {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  width:100%;
-  top:0;
-  left:0;
-  z-index: 0;
   position: absolute;
 }
 
 .home .max-width {
-  position: relative;
-  z-index:1;
+  filter: blur(0px);
+  width: 100%;
+  display: flex;
 }
 
 .home .max-width .row {
@@ -1240,35 +1234,27 @@ footer>span>i {
   color: #b91c1c;
 }
 
+.home-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .home-img {
+    width: 80%;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .home-img {
+    width: 100%;
+  }
+}
+
 /* video::-webkit-media-controls {
   display: none;
 } */
-
-/* ------------------- Responsive: Center contact details ------------------- */
-@media screen and (max-width: 1024px) {
-  .contact .contact-content .column {
-    width: 100%;
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .contact .contact-content .left .icons .row {
-    justify-content: center;
-  }
-
-  .contact .contact-content .left .icons .row .info {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contact .contact-content .left .icons .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact .contact-content .left .icons .row .info {
-    margin-left: 0;
-    margin-top: 5px;
-  }
-}
