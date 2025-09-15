@@ -1243,3 +1243,32 @@ footer>span>i {
 /* video::-webkit-media-controls {
   display: none;
 } */
+
+/* ------------------- Responsive: Center contact details ------------------- */
+@media screen and (max-width: 1024px) {
+  .contact .contact-content .column {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .contact .contact-content .left .icons .row {
+    justify-content: center;
+  }
+
+  .contact .contact-content .left .icons .row .info {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact-content .left .icons .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .contact-content .left .icons .row .info {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
