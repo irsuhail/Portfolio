@@ -281,32 +281,38 @@ section .title::after {
 
 .about-content {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  flex-direction: column;
   display: flex;
   align-items: center;
   border-radius: 10px;
-  padding-right: 5%;
+  padding:20px;
+  text-align:center;
+  
 }
 
 .about .about-content .left {
-  width: 35%;
+  width: 100%;
   padding: 20px;
-  height: 460px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .about .about-content .left img {
-    box-sizing: border-box;
-    overflow: hidden;
-    object-fit: contain;
+    width:100%;
+    height:auto;
+    max-width:100%;
     border: 4.5px solid rgb(255, 253, 253);
     /* padding-right: 14px; */
     /* background-color: #272937; */
     border-radius: 10px;
     filter: grayscale(20%);
+    object-fit: cover;
 }
+
 
 .about .about-content .left::before {
   /* content: ""; */
@@ -320,7 +326,8 @@ section .title::after {
   /* z-index: 20; */
  /* border-bottom-right-radius: 5px; */
 
-}
+} 
+
 
 
 .about .about-content .left::after {
@@ -338,7 +345,39 @@ section .title::after {
 }
 
 .about .about-content .right {
-  width: 55%;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+ .about .about-content .left {
+    width:35%;
+    margin-bottom: 0;
+  }
+
+  .about .about-content .left {
+    width: 35%;            /* ✅ image column */
+    margin-bottom: 0;
+  }
+
+  .about .about-content .right {
+    width: 65%;            /* ✅ text column */
+    padding-left: 20px;
+  }
+
+  .about .about-content .left img {
+    max-width: 100%;
+  }
+}
+
+/* Large screens (≥1024px) */
+@media (min-width: 1024px) {
+  .about .about-content .right .text {
+    font-size: 25px;
+  }
+
+  .about .about-content .right p {
+    font-size: 18px;
+  }
 }
 
 .about .about-content .right .text {
@@ -1234,26 +1273,8 @@ footer>span>i {
   color: #b91c1c;
 }
 
-.home-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 
-/* Tablets */
-@media (max-width: 768px) {
-  .home-img {
-    width: 80%;
-  }
-}
 
-/* Phones */
-@media (max-width: 480px) {
-  .home-img {
-    width: 100%;
-  }
-}
 
 /* video::-webkit-media-controls {
   display: none;
